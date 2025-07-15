@@ -1,0 +1,1 @@
+npx playwright test -c .\example-tests\playwright.config.ts
