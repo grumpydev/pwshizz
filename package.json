@@ -3,12 +3,28 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "test:bdd": "npx bddgen && npx playwright test",
+    "test:bdd:headed": "npx bddgen && npx playwright test --headed",
+    "test:bdd:ui": "npx bddgen && npx playwright test --ui",
+    "report:clean": "rmdir /s /q \"C:\\Users\\Arif\\Documents\\pwshizz-reports\" 2>nul || echo Reports directory cleaned",
+    "report:generate": "node scripts/generate-bdd-report.js",
+    "report:allure": "npx allure generate \"C:/Users/Arif/Documents/pwshizz-reports/allure-results\" --clean -o \"C:/Users/Arif/Documents/pwshizz-reports/allure-report\" && npx allure open \"C:/Users/Arif/Documents/pwshizz-reports/allure-report\"",
+    "report:bdd": "npm run test:bdd && npm run report:generate",
+    "report:fresh": "npm run report:clean && npm run report:bdd",
+    "report:open": "start \"C:/Users/Arif/Documents/pwshizz-reports/playwright-report/index.html\"",
+    "report:open:bdd": "start \"C:/Users/Arif/Documents/pwshizz-reports/bdd-reports/bdd-report.html\"",
+    "bdd:watch": "nodemon -w features -w step-definitions -e feature,ts --exec \"npx bddgen\""
+  },
+  "keywords": ["playwright", "bdd", "gherkin", "testing", "automation"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.54.1",
-    "@types/node": "^24.0.14"
+    "@types/node": "^24.0.14",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.3.2",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright-bdd": "^8.3.1"
   }
 }

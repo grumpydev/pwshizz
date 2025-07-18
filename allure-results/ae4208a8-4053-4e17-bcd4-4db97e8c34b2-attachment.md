@@ -1,0 +1,111 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link:
+    - /url: /
+    - img
+  - list:
+    - listitem:
+      - link "PW Shizz":
+        - /url: "#"
+        - text: PW Shizz
+        - img
+  - list:
+    - listitem: 
+  - list:
+    - listitem:
+      - link "":
+        - /url: "#"
+  - list:
+    - listitem: +
+    - listitem: 
+    - listitem: "?"
+  - button ""
+  - textbox "All cases"
+- img
+- text:  PW Shizz My Matters 0 My Tasks 1
+- list:
+  - listitem:
+    - text:  My Worklist - MB
+    - list:
+      - listitem:  My Worklist - MB - 98791 1
+      - listitem:  My Notifications
+      - listitem:  My Approvals
+      - listitem:  My Delegated
+      - listitem:  My Calendar
+      - listitem:  Document Expectations
+  - listitem:  Team Worklist
+  - listitem:  My Portfolio
+  - listitem:  Team Portfolio
+  - listitem:  My Documents
+  - listitem:  Time Management
+  - listitem:  Finance
+  - listitem:  Reports
+  - listitem:  Contract Management
+- text:  
+- heading "My Worklist" [level=4]
+- text: Tasks assigned to me
+- heading "Worklist Radar" [level=3]
+- text: 
+- list:
+  - listitem:
+    - heading "Worklist" [level=3]
+  - listitem:
+    - heading "Overdue" [level=3]
+  - listitem:
+    - heading "Due Today - MB-Testing" [level=3]
+  - listitem:
+    - heading "Junaid" [level=3]
+- navigation:
+  - list:
+    - listitem: 
+- navigation:
+  - list:
+    - listitem: 
+  - list:
+    - listitem: 
+    - listitem: 
+    - listitem: 
+- table:
+  - rowgroup:
+    - row " Due  Work Item Type Matter Phase edited 123 Action core-example-text Updated Phase - List of values":
+      - cell:
+        - checkbox
+      - cell ""
+      - cell "Due "
+      - cell "Work Item"
+      - cell "Type"
+      - cell "Matter"
+      - cell "Phase edited 123"
+      - cell "Action"
+      - cell "core-example-text"
+      - cell "Updated"
+      - cell "Phase - List of values"
+  - rowgroup:
+    - row " 0 07/17/2025 test  Quick Activity Claimant not set vs. Defendant not set  Draft (0d)  07/17/2025 1:46 PM  Draft ":
+      - cell:
+        - checkbox
+      - cell ""
+      - cell "0 07/17/2025"
+      - cell "test"
+      - cell " Quick Activity"
+      - cell "Claimant not set vs. Defendant not set":
+        - link "Claimant not set vs. Defendant not set":
+          - /url: /sharedo/db3aa4f5-37af-4d78-8aba-ab3c015f1fee
+      - cell " Draft (0d)"
+      - cell "":
+        - link "":
+          - /url: "#"
+      - cell
+      - cell "07/17/2025 1:46 PM"
+      - cell " Draft "
+- separator
+- text: Page
+- strong: "1"
+- text: of
+- strong: "1"
+- text: (
+- strong: "1"
+- text: records)
+```

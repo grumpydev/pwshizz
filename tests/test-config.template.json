@@ -1,0 +1,11 @@
+{
+  "users": {
+    "pwshizz": {
+      "username": "your_username_here",
+      "password": "your_password_here"
+    }
+  },
+  "urls": {
+    "baseUrl": "https://core1-release.sharedo.co.uk/"
+  }
+} 

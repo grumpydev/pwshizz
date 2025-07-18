@@ -1,0 +1,15 @@
+🎭 MCP-Informed: Navigating to Sharedo platform
+📸 MCP-Informed Screenshot: 01 - Navigated to Sharedo -> mcp-informed-01-page-loaded.png
+🎭 MCP-Informed: Entering username "PWSHIZZ"
+📸 MCP-Informed Screenshot: 02 - Username: PWSHIZZ -> mcp-informed-02-username-PWSHIZZ.png
+🎭 MCP-Informed: Entering password
+📸 MCP-Informed Screenshot: 03 - Password Entered -> mcp-informed-03-password.png
+🎭 MCP-Informed: Clicking login button
+📸 MCP-Informed Screenshot: 04 - Before Login Click -> mcp-informed-04-before-click.png
+📸 MCP-Informed Screenshot: 05 - After Login Click -> mcp-informed-05-after-click.png
+🎭 MCP-Informed: Looking for error messages
+📸 MCP-Informed Screenshot: 06 - Error Check -> mcp-informed-06-error-check.png
+❌ MCP-Informed: Error detected
+🎭 MCP-Informed: Verifying still on login page
+📸 MCP-Informed Screenshot: 08 - Still On Login -> mcp-informed-08-still-login.png
+⚠️ MCP-Informed: May have navigated away

@@ -1,0 +1,15 @@
+🎭 MCP-Informed: Navigating to Sharedo platform
+📸 MCP-Informed Screenshot: 01 - Navigated to Sharedo -> mcp-informed-01-page-loaded.png
+🎭 MCP-Informed: Navigating with keyboard
+📸 MCP-Informed Screenshot: 02 - Username Focused -> mcp-informed-02-username-focused.png
+🎭 MCP-Informed: Typing username "pwshizz"
+📸 MCP-Informed Screenshot: 02 - Typed: pwshizz -> mcp-informed-02-typed-pwshizz.png
+🎭 MCP-Informed: Tab to password field
+📸 MCP-Informed Screenshot: 03 - Password Focused -> mcp-informed-03-password-focused.png
+🎭 MCP-Informed: Typing password
+📸 MCP-Informed Screenshot: 03 - Password Typed -> mcp-informed-03-password-typed.png
+🎭 MCP-Informed: Submitting with Enter
+📸 MCP-Informed Screenshot: 05 - Form Submitted -> mcp-informed-05-submitted.png
+🎭 MCP-Informed: Verifying login success
+📸 MCP-Informed Screenshot: 06 - Login Success Check -> mcp-informed-06-success-check.png
+✅ MCP-Informed: Login successful - dashboard content detected

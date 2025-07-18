@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import { defineBddConfig } from 'playwright-bdd';
 
 /**
  * Read environment variables from file.
@@ -8,11 +9,18 @@ import { defineConfig, devices } from '@playwright/test';
 // import path from 'path';
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
 
+// Configure BDD test generation
+const testDir = defineBddConfig({
+  paths: ['features/**/*.feature'],
+  require: ['step-definitions/**/*.ts'],
+  importTestFrom: 'tests/test-config.ts',
+});
+
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './tests',
+  testDir,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -21,18 +29,32 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  /* Multiple reporters for detailed BDD reporting - saved to local Documents */
+  reporter: [
+    ['html', { outputFolder: 'C:/Users/Arif/Documents/pwshizz-reports/playwright-report' }],
+    ['json', { outputFile: 'C:/Users/Arif/Documents/pwshizz-reports/test-results/results.json' }],
+    ['allure-playwright', { outputFolder: 'C:/Users/Arif/Documents/pwshizz-reports/allure-results' }],
+    ['list']
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://localhost:3000',
+    baseURL: 'https://core1-release.sharedo.co.uk/',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     
+    /* Capture screenshots on failure and attach to report */
+    screenshot: 'only-on-failure',
+    
+    /* Capture videos on retry to see what happened */
+    video: 'retain-on-failure',
+    
     /* Ignore HTTPS errors for local development */
     ignoreHTTPSErrors: true,
+    
+    /* Set viewport size to 1536x864 */
+    viewport: { width: 1536, height: 864 },
   },
 
   /* Configure projects for major browsers */
