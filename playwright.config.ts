@@ -33,13 +33,16 @@ export default defineConfig({
     
     /* Ignore HTTPS errors for local development */
     ignoreHTTPSErrors: true,
+    
+    /* Run tests in headed mode so browser is visible */
+    headless: false,
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium'
-    }
+    },
 
     /* Test against mobile viewports. */
     // {
@@ -52,10 +55,10 @@ export default defineConfig({
     // },
 
     /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
+    {
+      name: 'Microsoft Edge',
+      use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    },
     // {
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
